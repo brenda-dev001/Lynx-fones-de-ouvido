@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/brenda-dev001/pulse-fones-de-ouvido/issues"
   },
-  "homepage": "https://github.com/brenda-dev001/pulse-fones-de-ouvido#readme"
+  "homepage": "https://github.com/brenda-dev001/pulse-fones-de-ouvido#readme",
+  "devDependencies": {
+    "sass": "^1.102.0"
+  }
 }
