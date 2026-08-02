@@ -1,0 +1,19 @@
+{
+  "name": "project_phone",
+  "version": "1.0.0",
+  "description": "modulo de sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenda-dev001/pulse-fones-de-ouvido.git"
+  },
+  "author": "Brenda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenda-dev001/pulse-fones-de-ouvido/issues"
+  },
+  "homepage": "https://github.com/brenda-dev001/pulse-fones-de-ouvido#readme"
+}
