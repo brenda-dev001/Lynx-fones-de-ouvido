@@ -1,0 +1,55 @@
+@use "../abstracts/variaveis" as var;
+@use "./mixes" as mix;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    @include mix.flex(column, nowrap, none, none, 5rem);
+    font-family: "Nunito", sans-serif;
+    background-color: var.$cor-fundo;
+    color: var.$cor-texto;
+    height: 100dvh;
+}
+
+h1{
+    @include mix.textos(clamp(2rem, calc(1.714rem + 0.893vw), 3rem), bold, 0, var.$cor-titulo);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var.$cor-texto;
+    
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+h2{
+    font-family: "Archivo Black";
+    color: var.$cor-texto;
+    // font-size: ;
+    font-weight: bolder;
+}
+
+p{
+    @include mix.textos(clamp(1.8rem, 1.5vw + 1.3rem, 2rem), normal, 1.1, var.$cor-texto);
+    text-align: justify;
+}
+
+a{
+    @include mix.textos(2rem, normal, 0, var.$cor-texto);
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+span{
+    @include mix.textos(clamp(1.6rem, calc(1.486rem + 0.357vw), 2rem), bold, 0, var.$cor-texto);
+    text-transform: uppercase;
+    color: var.$cor-destaque;
+}

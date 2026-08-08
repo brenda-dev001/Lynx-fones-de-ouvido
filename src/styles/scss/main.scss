@@ -1,1 +1,17 @@
-@use "/src/assets/fonts/font";
+//ABSTRACTS
+@use "./abstracts/variaveis";
+
+//BASE
+@use "./base/global";
+@use "./base/reset";
+@use "./base/mixes";
+
+//ANIMATIONS
+
+//COMPONENTS
+@use "./components/botao";
+
+//LAYOUTS
+@use "./layouts/header";
+@use "./layouts/hero";
+
