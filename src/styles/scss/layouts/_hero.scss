@@ -3,6 +3,10 @@
 
 .hero{
     @include mix.flex(row, wrap, center, space-around, 2rem);
+    background-image: url(/src/assets/images/svg_imagem-gato-fundo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
 
     &__container-lancamento{
         @include mix.flex(column, nowrap, flex-start, none, 5rem);
@@ -10,7 +14,7 @@
         flex: 1 1 40%;
         
         h2{
-            @include mix.textos(8rem, bolder, 8rem, var.$cor-texto);
+            @include mix.textos(8rem, bolder, 8rem, var(--cor-clara));
             text-transform: uppercase;
         }
     }
@@ -33,8 +37,8 @@
 
         & #botao-comprar{
             @include mix.flex(row, wrap, center, center, 0.5rem);
-            @include mix.textos(1.9rem, bold, 0, var.$cor-texto);
-            background-color: var.$cor-primaria;
+            @include mix.textos(1.9rem, bold, 0, var(--cor-clara));
+            background-color: var(--cor-primaria);
             width: 17rem;
             height: 4rem;
             border-radius: 7px;
@@ -52,9 +56,9 @@
         }
 
         & #botao-saiba-mais{
-            @include mix.textos(1.9rem, bold, 0, var.$cor-texto);
+            @include mix.textos(1.9rem, bold, 0, var(--cor-clara));
             @include mix.flex(row, wrap, center, center, 0.3rem);
-            background-color: var.$cor-primaria;
+            background-color: var(--cor-primaria);
             width: 16rem;
             height: 4rem;
             border-radius: 7px;
@@ -65,7 +69,20 @@
             }
         }
     }
-    
 }
+
+// .container-imagem{
+//     @include mix.flex(row, nowrap, center, center, 0);
+
+//     & div{
+//         background-image: url(/src/assets/images/svg_imagem-gato-fundo.svg);
+//         height: 80rem;
+//         width: 80%;
+//         background-repeat: no-repeat;
+
+//     }
+//     margin: 0 auto;
+//     background-color: rgb(2, 17, 12);
+// }
 
     
