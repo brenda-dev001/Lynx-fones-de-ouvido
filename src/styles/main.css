@@ -1,18 +1,240 @@
-/* Error: Undefined variable.
- *    ,
- * 16 |     background-color: var.$cor-fundo;
- *    |                       ^^^^^^^^^^^^^^
- *    '
- *   src/styles/scss/base/_global.scss 16:23  @use
- *   src/styles/scss/main.scss 5:1            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 16 \2502      background-color: var.$cor-fundo;\a    \2502                        ^^^^^^^^^^^^^^\a    \2575 \a   src/styles/scss/base/_global.scss 16:23  @use\a   src/styles/scss/main.scss 5:1            root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+:root {
+  --cor-clara: #DBF5FE;
+  --cor-primaria: #49DDFC;
+  --cor-secundaria: #2CB4CE;
+  --cor-primaria-escura: #208BA0;
+  --azul-petroleo: #146575;
+  --azul-escuro: #0A414C;
+  --cor-fundo: #032026;
 }
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: none;
+  justify-content: none;
+  gap: 5rem;
+  flex-wrap: nowrap;
+  font-family: "Nunito", sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-clara);
+  height: auto;
+}
+
+h1 {
+  font-size: clamp(20px, 2vw + 1rem, 50px);
+  font-weight: bold;
+  line-height: 0;
+  color: var(--cor-primaria);
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+h1:hover {
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Archivo Black";
+  color: var(--cor-primaria);
+  font-weight: bolder;
+}
+
+p {
+  font-size: clamp(1.8rem, 1.5vw + 1.3rem, 2rem);
+  font-weight: normal;
+  line-height: 1.1;
+  color: var(--cor-clara);
+  text-align: justify;
+}
+
+a {
+  font-size: 3rem;
+  font-weight: normal;
+  line-height: 0;
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+span {
+  font-size: clamp(1.6rem, 1.486rem + 0.357vw, 2rem);
+  font-weight: bold;
+  line-height: 0;
+  color: var(--cor-clara);
+  text-transform: uppercase;
+  color: var(--cor-primaria);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.cabecalho {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  height: auto;
+  width: 100vw;
+}
+.cabecalho__container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: auto;
+}
+.cabecalho__link {
+  display: inline-block;
+  width: clamp(60px, 4vw + 1rem, 100px);
+  height: auto;
+}
+.cabecalho__link img {
+  width: 100%;
+  height: auto;
+}
+.cabecalho__nav {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+.cabecalho__botton {
+  background-color: transparent;
+  width: 6rem;
+  height: auto;
+  border: none;
+}
+.cabecalho__botton img {
+  width: 96%;
+  height: auto;
+}
+.cabecalho__botton:hover {
+  cursor: pointer;
+}
+.cabecalho__container-compras {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: nowrap;
+  padding: 1rem;
+}
+
+.hero {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.hero__container-lancamento {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: none;
+  gap: 5rem;
+  flex-wrap: nowrap;
+  padding: 3rem;
+  flex: 1 1 40%;
+}
+.hero__container-lancamento h2 {
+  font-size: 8rem;
+  font-weight: bolder;
+  line-height: 8rem;
+  color: var(--cor-clara);
+  text-transform: uppercase;
+}
+.hero__container-imagem {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+  height: 80dvh;
+  flex: 0 1 50%;
+  background-image: radial-gradient(ellipse 53rem 13rem at 50% 75%, #06b6d4, rgba(81, 197, 249, 0.34), transparent 48%), radial-gradient(ellipse 50rem 51rem at 57% 44%, #06b6d4, rgba(81, 197, 249, 0.34), transparent 53%);
+}
+.hero__container-imagem img {
+  width: auto;
+  height: 67vh;
+}
+.hero__container-botoes {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.hero__container-botoes #botao-comprar {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 1.9rem;
+  font-weight: bold;
+  line-height: 0;
+  color: var(--cor-clara);
+  background-color: var(--cor-primaria);
+  width: 17rem;
+  height: 4rem;
+  border-radius: 7px;
+  border: none;
+  flex-wrap: nowrap;
+}
+.hero__container-botoes #botao-comprar i {
+  font-size: 2.5rem;
+}
+.hero__container-botoes #botao-comprar:hover {
+  cursor: pointer;
+}
+.hero__container-botoes #botao-saiba-mais {
+  font-size: 1.9rem;
+  font-weight: bold;
+  line-height: 0;
+  color: var(--cor-clara);
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  background-color: var(--cor-primaria);
+  width: 16rem;
+  height: 4rem;
+  border-radius: 7px;
+  border: none;
+}
+.hero__container-botoes #botao-saiba-mais i {
+  font-size: 2.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
