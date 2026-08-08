@@ -1,21 +1,20 @@
-@use "../abstracts/variaveis" as var;
 @use "../base/mixes" as mix;
 
 .cabecalho{
     @include mix.flex(row, wrap, center, space-between, 1rem);
     padding: 1rem;
-    height: 7rem;
+    height: auto;
     width: 100vw;
 
     &__container{
         @include mix.flex(row, wrap, center, none, 1rem);
+        width: auto;
     }
     
     &__link{
         display: inline-block;
-        width: 7rem;
-        height: 7rem;
-        padding: 0.5rem;
+        width: clamp(60px, 4vw + 1rem, 100px);
+        height: auto;
         img{
             width: 100%;
             height: auto;
@@ -23,25 +22,30 @@
     }
 
     &__nav{
-        @include mix.flex(row, wrap, center, center, 4rem);
+        @include mix.flex(row, wrap, center, center, 7rem);
+        margin-top: 0.5rem;
         
     }
 
     &__botton{
         background-color: transparent;
-        width: 5rem;
-        height: 2.5rem;
+        width: 6rem;
+        height: auto;
         border: none;
 
-        img{
-            width: 100%;
-            height: 100%;
-            color: var.$cor-texto;
+        & img{
+            width: 96%;
+            height: auto;
         }
 
         &:hover{
             cursor: pointer;
         }
+    }
+
+    &__container-compras{
+        @include mix.flex(row, nowrap, center, center, 4rem);
+        padding: 1rem;
     }
 
 }
