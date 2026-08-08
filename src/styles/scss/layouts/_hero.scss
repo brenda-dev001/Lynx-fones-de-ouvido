@@ -1,0 +1,71 @@
+@use "../base/mixes" as mix;
+@use "../abstracts/variaveis" as var;
+
+.hero{
+    @include mix.flex(row, wrap, center, space-around, 2rem);
+
+    &__container-lancamento{
+        @include mix.flex(column, nowrap, flex-start, none, 5rem);
+        padding: 3rem;
+        flex: 1 1 40%;
+        
+        h2{
+            @include mix.textos(8rem, bolder, 8rem, var.$cor-texto);
+            text-transform: uppercase;
+        }
+    }
+    
+    &__container-imagem{
+        @include mix.flex(row, wrap, flex-start, center, 0);
+        height: 80dvh;
+        flex: 0 1 50%;
+        background-image: radial-gradient(ellipse 53rem 13rem at 50% 75%, #06b6d4, rgba(81, 197, 249, 0.34), transparent 48%), radial-gradient(ellipse 50rem 51rem at 57% 44%, #06b6d4, rgba(81, 197, 249, 0.34), transparent 53%);
+
+        img{
+            width: auto;
+            height: 67vh;
+        }
+    }
+    
+
+    &__container-botoes{
+        @include mix.flex(row, wrap, center, center, 2rem);
+
+        & #botao-comprar{
+            @include mix.flex(row, wrap, center, center, 0.5rem);
+            @include mix.textos(1.9rem, bold, 0, var.$cor-texto);
+            background-color: var.$cor-primaria;
+            width: 17rem;
+            height: 4rem;
+            border-radius: 7px;
+            border: none;
+            flex-wrap: nowrap;
+            
+            i{
+                font-size: 2.5rem;
+            }
+            
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        & #botao-saiba-mais{
+            @include mix.textos(1.9rem, bold, 0, var.$cor-texto);
+            @include mix.flex(row, wrap, center, center, 0.3rem);
+            background-color: var.$cor-primaria;
+            width: 16rem;
+            height: 4rem;
+            border-radius: 7px;
+            border: none;
+
+            i{
+                font-size: 2.5rem;
+            }
+        }
+    }
+    
+}
+
+    
