@@ -1,10 +1,10 @@
 @use "../base/mixes" as mix;
 
 .cabecalho{
-    @include mix.flex(row, wrap, center, space-between, 1rem);
-    padding: 1rem;
+    @include mix.flex(row, wrap, center, space-between, 0);
     height: auto;
     width: 100vw;
+    padding: 0 1.5rem;
 
     &__container{
         @include mix.flex(row, wrap, center, none, 1rem);
@@ -23,18 +23,18 @@
 
     &__nav{
         @include mix.flex(row, wrap, center, center, 7rem);
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         
     }
 
     &__botton{
         background-color: transparent;
-        width: 6rem;
+        width: 3.5rem;
         height: auto;
         border: none;
 
         & img{
-            width: 96%;
+            width: 94%;
             height: auto;
         }
 
@@ -44,8 +44,7 @@
     }
 
     &__container-compras{
-        @include mix.flex(row, nowrap, center, center, 4rem);
-        padding: 1rem;
+        @include mix.flex(row, nowrap, center, center, 3rem);
     }
 
 }

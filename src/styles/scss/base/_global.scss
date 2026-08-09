@@ -10,7 +10,7 @@
 }
 
 body{
-    @include mix.flex(column, nowrap, none, none, 5rem);
+    @include mix.flex(column, nowrap, normal, normal, 5rem);
     font-family: "Nunito", sans-serif;
     background-color: var(--cor-fundo);
     color: var(--cor-clara);
@@ -18,8 +18,8 @@ body{
 }
 
 h1{
-    @include mix.textos(clamp(20px, 2vw + 1rem, 50px), bold, 0, var(--cor-primaria));
-    margin-top: 0.5rem;
+    @include mix.textos(3rem, bold, 0, var(--cor-primaria));
+    margin-top: 1rem;
     text-transform: uppercase;
     
     &:hover{
@@ -39,7 +39,7 @@ p{
 }
 
 a{
-    @include mix.textos(3rem, normal, 0, var(--cor-secundaria));
+    @include mix.textos(2rem, normal, 0, var(--cor-secundaria));
     text-decoration: none;
     text-transform: capitalize;
 
