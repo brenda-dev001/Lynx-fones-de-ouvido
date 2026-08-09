@@ -8,6 +8,7 @@
   --azul-petroleo: #146575;
   --azul-escuro: #0A414C;
   --cor-fundo: #032026;
+  --cor-botoes: #2cb3ce61;
 }
 
 .archivo-black-regular {
@@ -21,7 +22,7 @@ body {
   flex-flow: column;
   align-items: normal;
   justify-content: normal;
-  gap: 5rem;
+  gap: 1rem;
   flex-wrap: nowrap;
   font-family: "Nunito", sans-serif;
   background-color: var(--cor-fundo);
@@ -146,7 +147,7 @@ html {
 .hero {
   display: flex;
   flex-flow: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around;
   gap: 2rem;
   flex-wrap: wrap;
@@ -154,32 +155,47 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
-  padding: 3rem;
+  padding: 2rem;
 }
 .hero__container-lancamento {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  justify-content: none;
+  justify-content: normal;
   gap: 5rem;
   flex-wrap: nowrap;
-  padding: 3rem;
   flex: 1 1 40%;
+  padding: 4rem;
 }
 .hero__container-lancamento h2 {
-  font-size: 8rem;
+  font-size: 5rem;
   font-weight: bolder;
-  line-height: 8rem;
-  color: var(--cor-clara);
+  line-height: 2rem;
+  color: var(--cor-secundaria);
   text-transform: uppercase;
 }
-.hero__container-titulos-lancamento {
+.hero__container-titulo-lancamento {
+  display: flex;
+  flex-flow: row;
+  align-items: normal;
+  justify-content: flex-end;
+  gap: 0;
+  flex-wrap: wrap;
+  width: 46rem;
+  margin-bottom: 3rem;
+}
+.hero__container-titulo-lancamento div h2 {
+  font-size: 6rem;
+  color: var(--cor-primaria);
+}
+.hero__container-resumo {
   display: flex;
   flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  align-items: baseline;
+  justify-content: normal;
+  gap: 8rem;
   flex-wrap: nowrap;
+  width: 46rem;
 }
 .hero__container-imagem {
   display: flex;
@@ -202,28 +218,25 @@ html {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .hero__container-botoes #botao-comprar {
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+  gap: 0;
+  flex-wrap: nowrap;
   font-size: 1.9rem;
   font-weight: bold;
   line-height: 0;
   color: var(--cor-clara);
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-botoes);
   width: 17rem;
   height: 4rem;
-  border-radius: 7px;
+  border-radius: 1.7rem;
   border: none;
-  flex-wrap: nowrap;
-}
-.hero__container-botoes #botao-comprar i {
-  font-size: 2.5rem;
+  color: var(--cor-primaria);
 }
 .hero__container-botoes #botao-comprar:hover {
   cursor: pointer;
@@ -232,18 +245,19 @@ html {
   font-size: 1.9rem;
   font-weight: bold;
   line-height: 0;
-  color: var(--cor-clara);
+  color: var(--cor-primaria);
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: center;
   gap: 0.3rem;
-  flex-wrap: wrap;
-  background-color: var(--cor-primaria);
+  flex-wrap: nowrap;
+  background-color: var(--cor-botoes);
   width: 16rem;
   height: 4rem;
-  border-radius: 7px;
+  border-radius: 1.7rem;
   border: none;
+  text-transform: none;
 }
 .hero__container-botoes #botao-saiba-mais i {
   font-size: 2.5rem;

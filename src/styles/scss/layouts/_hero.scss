@@ -7,16 +7,33 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
+    padding: 2rem;
 
     &__container-lancamento{
-        @include mix.flex(column, nowrap, flex-start, none, 5rem);
-        padding: 3rem;
+        @include mix.flex(column, nowrap, flex-start, normal, 5rem);
         flex: 1 1 40%;
+        padding: 4rem;
         
         h2{
-            @include mix.textos(8rem, bolder, 8rem, var(--cor-clara));
+            @include mix.textos(5rem, bolder, 2rem, var(--cor-secundaria));
             text-transform: uppercase;
         }
+    }
+
+    &__container-titulo-lancamento{
+        @include mix.flex(row, wrap, normal, flex-end, 0);
+        width: 46rem;
+        margin-bottom: 3rem;
+
+        div h2{
+            font-size: 6rem;
+            color: var(--cor-primaria);
+        }
+    }
+
+    &__container-resumo{
+        @include mix.flex(column, nowrap, baseline, normal, 8rem);
+        width: 46rem;
     }
     
     &__container-imagem{
@@ -33,22 +50,17 @@
     
 
     &__container-botoes{
-        @include mix.flex(row, wrap, center, center, 2rem);
+        @include mix.flex(row, nowrap, center, center, 2rem);
 
         & #botao-comprar{
-            @include mix.flex(row, wrap, center, center, 0.5rem);
+            @include mix.flex(row, nowrap, center, center, 0);
             @include mix.textos(1.9rem, bold, 0, var(--cor-clara));
-            background-color: var(--cor-primaria);
+            background-color: var(--cor-botoes);
             width: 17rem;
             height: 4rem;
-            border-radius: 7px;
+            border-radius: 1.7rem;
             border: none;
-            flex-wrap: nowrap;
-            
-            i{
-                font-size: 2.5rem;
-            }
-            
+            color: var(--cor-primaria);
 
             &:hover{
                 cursor: pointer;
@@ -56,13 +68,14 @@
         }
 
         & #botao-saiba-mais{
-            @include mix.textos(1.9rem, bold, 0, var(--cor-clara));
-            @include mix.flex(row, wrap, center, center, 0.3rem);
-            background-color: var(--cor-primaria);
+            @include mix.textos(1.9rem, bold, 0, var(--cor-primaria));
+            @include mix.flex(row, nowrap, center, center, 0.3rem);
+            background-color: var(--cor-botoes);
             width: 16rem;
             height: 4rem;
-            border-radius: 7px;
+            border-radius: 1.7rem;
             border: none;
+            text-transform: none;
 
             i{
                 font-size: 2.5rem;

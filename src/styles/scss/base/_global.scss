@@ -10,7 +10,7 @@
 }
 
 body{
-    @include mix.flex(column, nowrap, normal, normal, 5rem);
+    @include mix.flex(column, nowrap, normal, normal, 1rem);
     font-family: "Nunito", sans-serif;
     background-color: var(--cor-fundo);
     color: var(--cor-clara);
