@@ -156,6 +156,7 @@ html {
   background-position: center;
   background-size: 50%;
   padding: 2rem;
+  min-height: 74vh;
 }
 .hero__container-lancamento {
   display: flex;
@@ -164,7 +165,7 @@ html {
   justify-content: normal;
   gap: 5rem;
   flex-wrap: nowrap;
-  flex: 1 1 40%;
+  flex: 1 1 35%;
   padding: 4rem;
 }
 .hero__container-lancamento h2 {
@@ -196,21 +197,6 @@ html {
   gap: 8rem;
   flex-wrap: nowrap;
   width: 46rem;
-}
-.hero__container-imagem {
-  display: flex;
-  flex-flow: row;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 0;
-  flex-wrap: wrap;
-  height: 80dvh;
-  flex: 0 1 50%;
-  background-image: radial-gradient(ellipse 53rem 13rem at 50% 75%, #06b6d4, rgba(81, 197, 249, 0.34), transparent 48%), radial-gradient(ellipse 50rem 51rem at 57% 44%, #06b6d4, rgba(81, 197, 249, 0.34), transparent 53%);
-}
-.hero__container-imagem img {
-  width: auto;
-  height: 67vh;
 }
 .hero__container-botoes {
   display: flex;
@@ -261,6 +247,22 @@ html {
 }
 .hero__container-botoes #botao-saiba-mais i {
   font-size: 2.5rem;
+}
+.hero__container-imagem {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  flex: 1 1 auto;
+}
+.hero__container-imagem div {
+  width: 29vw;
+}
+.hero__container-imagem div img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

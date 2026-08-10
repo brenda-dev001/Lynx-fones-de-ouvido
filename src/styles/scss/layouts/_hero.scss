@@ -8,10 +8,11 @@
     background-position: center;
     background-size: 50%;
     padding: 2rem;
+    min-height: 74vh;
 
     &__container-lancamento{
         @include mix.flex(column, nowrap, flex-start, normal, 5rem);
-        flex: 1 1 40%;
+        flex: 1 1 35%;
         padding: 4rem;
         
         h2{
@@ -35,24 +36,11 @@
         @include mix.flex(column, nowrap, baseline, normal, 8rem);
         width: 46rem;
     }
-    
-    &__container-imagem{
-        @include mix.flex(row, wrap, flex-start, center, 0);
-        height: 80dvh;
-        flex: 0 1 50%;
-        background-image: radial-gradient(ellipse 53rem 13rem at 50% 75%, #06b6d4, rgba(81, 197, 249, 0.34), transparent 48%), radial-gradient(ellipse 50rem 51rem at 57% 44%, #06b6d4, rgba(81, 197, 249, 0.34), transparent 53%);
-
-        img{
-            width: auto;
-            height: 67vh;
-        }
-    }
-    
 
     &__container-botoes{
         @include mix.flex(row, nowrap, center, center, 2rem);
 
-        & #botao-comprar{
+        #botao-comprar{
             @include mix.flex(row, nowrap, center, center, 0);
             @include mix.textos(1.9rem, bold, 0, var(--cor-clara));
             background-color: var(--cor-botoes);
@@ -67,7 +55,7 @@
             }
         }
 
-        & #botao-saiba-mais{
+        #botao-saiba-mais{
             @include mix.textos(1.9rem, bold, 0, var(--cor-primaria));
             @include mix.flex(row, nowrap, center, center, 0.3rem);
             background-color: var(--cor-botoes);
@@ -82,20 +70,22 @@
             }
         }
     }
+
+    &__container-imagem{
+        @include mix.flex(row, nowrap, center, center, 0);
+        flex: 1 1 auto;
+
+        div{
+            width: 29vw;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
 }
 
-// .container-imagem{
-//     @include mix.flex(row, nowrap, center, center, 0);
 
-//     & div{
-//         background-image: url(/src/assets/images/svg_imagem-gato-fundo.svg);
-//         height: 80rem;
-//         width: 80%;
-//         background-repeat: no-repeat;
-
-//     }
-//     margin: 0 auto;
-//     background-color: rgb(2, 17, 12);
-// }
 
     
