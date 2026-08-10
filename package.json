@@ -1,7 +1,7 @@
 {
-  "name": "project_phone",
+  "name": "projeto lynx",
   "version": "1.0.0",
-  "description": "modulo de sass",
+  "description": "Projeto de landing page para venda de um produto fictício.",
   "main": "index.js",
   "scripts": {
     "watch:sass": "sass ./src/styles/scss/main.scss ./src/styles/main.css -w",
