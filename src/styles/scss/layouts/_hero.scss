@@ -8,7 +8,7 @@
     background-position: center;
     background-size: 50%;
     padding: 2rem;
-    min-height: 74vh;
+    min-height: 100vh;
 
     &__container-lancamento{
         @include mix.flex(column, nowrap, flex-start, normal, 5rem);

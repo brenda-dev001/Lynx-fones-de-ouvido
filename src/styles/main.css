@@ -166,7 +166,7 @@ html {
   background-position: center;
   background-size: 50%;
   padding: 2rem;
-  min-height: 74vh;
+  min-height: 100vh;
 }
 .hero__container-lancamento {
   display: flex;
