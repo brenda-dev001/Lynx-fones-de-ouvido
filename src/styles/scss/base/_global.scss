@@ -15,6 +15,10 @@ body{
     background-color: var(--cor-fundo);
     color: var(--cor-clara);
     height: auto;
+
+    main{
+        @include mix.flex(column, nowrap, normal, normal, 5rem);
+    }
 }
 
 h1{

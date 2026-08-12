@@ -29,6 +29,14 @@ body {
   color: var(--cor-clara);
   height: auto;
 }
+body main {
+  display: flex;
+  flex-flow: column;
+  align-items: normal;
+  justify-content: normal;
+  gap: 5rem;
+  flex-wrap: nowrap;
+}
 
 h1 {
   font-size: 3rem;
@@ -263,6 +271,10 @@ html {
 .hero__container-imagem div img {
   width: 100%;
   height: auto;
+}
+
+.recursos {
+  padding: 3rem;
 }
 
 /*# sourceMappingURL=main.css.map */
