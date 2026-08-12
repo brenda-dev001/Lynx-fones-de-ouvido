@@ -102,6 +102,8 @@ html {
   height: auto;
   width: 100vw;
   padding: 0 1.5rem;
+  background-color: var(--cor-fundo);
+  position: fixed;
 }
 .cabecalho__container {
   display: flex;
