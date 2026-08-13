@@ -34,7 +34,7 @@ body main {
   flex-flow: column;
   align-items: normal;
   justify-content: normal;
-  gap: 5rem;
+  gap: 0;
   flex-wrap: nowrap;
 }
 
@@ -279,12 +279,12 @@ html {
 
 .recursos {
   padding: 2rem;
-  background-color: var(--azul-escuro);
+  background: linear-gradient(to bottom, var(--cor-fundo) 0%, var(--azul-escuro), var(--azul-escuro));
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 3rem;
+  gap: 0;
   flex-wrap: nowrap;
   min-height: 100vh;
 }

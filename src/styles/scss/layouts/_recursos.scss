@@ -2,8 +2,8 @@
 
 .recursos{
     padding: 2rem;
-    background-color: var(--azul-escuro);
-    @include mix.flex(column, nowrap, center, space-evenly, 3rem);
+    background: linear-gradient(to bottom, var(--cor-fundo) 0%, var(--azul-escuro), var(--azul-escuro));
+    @include mix.flex(column, nowrap, center, space-evenly, 0);
     min-height: 100vh;
     
     & h2{
