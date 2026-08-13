@@ -1,0 +1,50 @@
+@use "../base/mixes" as mix;
+
+.recursos{
+    padding: 2rem;
+    background-color: var(--azul-escuro);
+    @include mix.flex(column, nowrap, center, space-evenly, 3rem);
+    min-height: 100vh;
+    
+    & h2{
+        font-size: 2rem;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+    &__container{
+        @include mix.flex(row, wrap, center, normal, 5rem);
+    }
+
+    &__card{
+        @include mix.flex(column, nowrap, center, space-evenly, 0);
+        height: 39rem;
+        width: 22rem;
+        padding: 1rem;
+        background-color: #032026a1;
+        border-radius: 1.7rem;
+        box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.25);
+
+        h2{
+            font-size: 1.8rem;
+            text-transform: lowercase;
+            font-weight: normal;
+            color: var(--cor-primaria);
+            text-align: center;
+        }
+
+        & i{
+            font-size: 6rem;
+            color: var(--cor-primaria);
+        }
+
+        div{
+            width: 9rem;
+            text-align: center;
+            border: 0.2rem solid var(--cor-secundaria);
+            border-radius: 1.7rem;
+            background-color: #2cb3ce91;
+        }
+    }
+
+}

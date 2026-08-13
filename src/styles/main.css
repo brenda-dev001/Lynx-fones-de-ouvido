@@ -276,7 +276,60 @@ html {
 }
 
 .recursos {
-  padding: 3rem;
+  padding: 2rem;
+  background-color: var(--azul-escuro);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+  flex-wrap: nowrap;
+  min-height: 100vh;
+}
+.recursos h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.recursos__container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: normal;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.recursos__card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0;
+  flex-wrap: nowrap;
+  height: 39rem;
+  width: 22rem;
+  padding: 1rem;
+  background-color: rgba(3, 32, 38, 0.631372549);
+  border-radius: 1.7rem;
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.25);
+}
+.recursos__card h2 {
+  font-size: 1.8rem;
+  text-transform: lowercase;
+  font-weight: normal;
+  color: var(--cor-primaria);
+  text-align: center;
+}
+.recursos__card i {
+  font-size: 6rem;
+  color: var(--cor-primaria);
+}
+.recursos__card div {
+  width: 9rem;
+  text-align: center;
+  border: 0.2rem solid var(--cor-secundaria);
+  border-radius: 1.7rem;
+  background-color: rgba(44, 179, 206, 0.568627451);
 }
 
 /*# sourceMappingURL=main.css.map */
