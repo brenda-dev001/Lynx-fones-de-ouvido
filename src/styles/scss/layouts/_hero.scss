@@ -43,9 +43,8 @@
         #botao-comprar{
             @include mix.flex(row, nowrap, center, center, 0);
             @include mix.textos(1.9rem, bold, 0, var(--cor-clara));
+            @include mix.hw(4rem, 17rem);
             background-color: var(--cor-botoes);
-            width: 17rem;
-            height: 4rem;
             border-radius: 1.7rem;
             border: none;
             color: var(--cor-primaria);
@@ -58,10 +57,9 @@
 
         #botao-saiba-mais{
             @include mix.textos(1.9rem, bold, 0, var(--cor-primaria));
+            @include mix.hw(4rem, 16rem);
             @include mix.flex(row, nowrap, center, center, 0.3rem);
             background-color: var(--cor-botoes);
-            width: 16rem;
-            height: 4rem;
             border-radius: 1.7rem;
             border: none;
             text-transform: none;
@@ -81,8 +79,7 @@
             width: 29vw;
 
             img{
-                width: 100%;
-                height: auto;
+                @include mix.hw(auto, 100%);
             }
         }
     }

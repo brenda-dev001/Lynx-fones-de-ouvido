@@ -13,3 +13,8 @@
     line-height: $altura;
     color: $cor-texto;
 }
+
+@mixin hw($altura, $largura){
+    width: $largura;
+    height: $altura;
+}

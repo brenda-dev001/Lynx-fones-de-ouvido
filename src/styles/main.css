@@ -99,8 +99,8 @@ html {
   justify-content: space-between;
   gap: 0;
   flex-wrap: wrap;
-  height: auto;
   width: 100vw;
+  height: auto;
   padding: 0 1.5rem;
   background-color: var(--cor-fundo);
   position: fixed;
@@ -113,10 +113,11 @@ html {
   gap: 1rem;
   flex-wrap: wrap;
   width: auto;
+  height: auto;
 }
 .cabecalho__link {
   display: inline-block;
-  width: clamp(60px, 4vw + 1rem, 100px);
+  width: 6rem;
   height: auto;
 }
 .cabecalho__link img {
@@ -227,9 +228,9 @@ html {
   font-weight: bold;
   line-height: 0;
   color: var(--cor-clara);
-  background-color: var(--cor-botoes);
   width: 17rem;
   height: 4rem;
+  background-color: var(--cor-botoes);
   border-radius: 1.7rem;
   border: none;
   color: var(--cor-primaria);
@@ -243,6 +244,8 @@ html {
   font-weight: bold;
   line-height: 0;
   color: var(--cor-primaria);
+  width: 16rem;
+  height: 4rem;
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -250,8 +253,6 @@ html {
   gap: 0.3rem;
   flex-wrap: nowrap;
   background-color: var(--cor-botoes);
-  width: 16rem;
-  height: 4rem;
   border-radius: 1.7rem;
   border: none;
   text-transform: none;
@@ -278,14 +279,14 @@ html {
 }
 
 .recursos {
-  padding: 2rem;
-  background: linear-gradient(to bottom, var(--cor-fundo) 0%, var(--azul-escuro), var(--azul-escuro));
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-evenly;
   gap: 0;
   flex-wrap: nowrap;
+  background: linear-gradient(to bottom, var(--cor-fundo) 0%, var(--azul-escuro), var(--azul-escuro));
+  padding: 2rem;
   min-height: 100vh;
 }
 .recursos h2 {
@@ -308,8 +309,8 @@ html {
   justify-content: space-evenly;
   gap: 0;
   flex-wrap: nowrap;
-  height: 39rem;
   width: 22rem;
+  height: 39rem;
   padding: 1rem;
   background-color: rgba(3, 32, 38, 0.631372549);
   border-radius: 1.7rem;

@@ -2,24 +2,21 @@
 
 .cabecalho{
     @include mix.flex(row, wrap, center, space-between, 0);
-    height: auto;
-    width: 100vw;
+    @include mix.hw(auto, 100vw);
     padding: 0 1.5rem;
     background-color: var(--cor-fundo);
     position: fixed;
 
     &__container{
         @include mix.flex(row, wrap, center, none, 1rem);
-        width: auto;
+        @include mix.hw(auto, auto);
     }
     
     &__link{
         display: inline-block;
-        width: clamp(60px, 4vw + 1rem, 100px);
-        height: auto;
+        @include mix.hw(auto, 6rem);
         img{
-            width: 100%;
-            height: auto;
+            @include mix.hw(auto, 100%);
         }
     }
 
@@ -31,13 +28,11 @@
 
     &__botton{
         background-color: transparent;
-        width: 3.5rem;
-        height: auto;
+        @include mix.hw(auto, 3.5rem);
         border: none;
 
         & img{
-            width: 94%;
-            height: auto;
+            @include mix.hw(auto, 94%);
         }
 
         &:hover{

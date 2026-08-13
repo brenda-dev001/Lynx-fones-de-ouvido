@@ -1,9 +1,9 @@
 @use "../base/mixes" as mix;
 
 .recursos{
-    padding: 2rem;
-    background: linear-gradient(to bottom, var(--cor-fundo) 0%, var(--azul-escuro), var(--azul-escuro));
     @include mix.flex(column, nowrap, center, space-evenly, 0);
+    background: linear-gradient(to bottom, var(--cor-fundo) 0%, var(--azul-escuro), var(--azul-escuro));
+    padding: 2rem;
     min-height: 100vh;
     
     & h2{
@@ -18,8 +18,7 @@
 
     &__card{
         @include mix.flex(column, nowrap, center, space-evenly, 0);
-        height: 39rem;
-        width: 22rem;
+        @include mix.hw(39rem, 22rem);
         padding: 1rem;
         background-color: #032026a1;
         border-radius: 1.7rem;
