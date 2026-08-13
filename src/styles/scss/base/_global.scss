@@ -17,7 +17,7 @@ body{
     height: auto;
 
     main{
-        @include mix.flex(column, nowrap, normal, normal, 5rem);
+        @include mix.flex(column, nowrap, normal, normal, 0);
     }
 }
 
