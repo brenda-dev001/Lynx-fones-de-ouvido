@@ -292,6 +292,8 @@ html {
 .recursos h2 {
   font-size: 2rem;
   font-weight: normal;
+  line-height: 2rem;
+  color: var(--cor-primaria);
   text-transform: uppercase;
 }
 .recursos__container {
@@ -318,9 +320,10 @@ html {
 }
 .recursos__card h2 {
   font-size: 1.8rem;
-  text-transform: lowercase;
   font-weight: normal;
+  line-height: 2rem;
   color: var(--cor-primaria);
+  text-transform: lowercase;
   text-align: center;
 }
 .recursos__card i {
