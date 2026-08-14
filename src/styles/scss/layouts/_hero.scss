@@ -1,7 +1,7 @@
-@use "../abstracts/mixins" as mix;
+@use "../abstracts" as abs;
 
 .hero{
-    @include mix.flex(row, wrap, center, space-around, 2rem);
+    @include abs.flex(row, wrap, center, space-around, 2rem);
     background-image: url(/src/assets/images/svg_imagem-gato-fundo.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -10,18 +10,18 @@
     min-height: 100vh;
 
     &__container-lancamento{
-        @include mix.flex(column, nowrap, flex-start, normal, 5rem);
+        @include abs.flex(column, nowrap, flex-start, normal, 5rem);
         flex: 1 1 35%;
         padding: 4rem;
         
         h2{
-            @include mix.textos(5rem, bolder, 2rem, var(--cor-secundaria));
+            @include abs.textos(5rem, bolder, 2rem, var(--cor-secundaria));
             text-transform: uppercase;
         }
     }
 
     &__container-titulo-lancamento{
-        @include mix.flex(row, wrap, normal, flex-end, 0);
+        @include abs.flex(row, wrap, normal, flex-end, 0);
         width: 46rem;
         margin-bottom: 3rem;
 
@@ -32,17 +32,17 @@
     }
 
     &__container-resumo{
-        @include mix.flex(column, nowrap, baseline, normal, 8rem);
+        @include abs.flex(column, nowrap, baseline, normal, 8rem);
         width: 46rem;
     }
 
     &__container-botoes{
-        @include mix.flex(row, nowrap, center, center, 2rem);
+        @include abs.flex(row, nowrap, center, center, 2rem);
 
         #botao-comprar{
-            @include mix.flex(row, nowrap, center, center, 0);
-            @include mix.textos(1.9rem, bold, 0, var(--cor-clara));
-            @include mix.hw(4rem, 17rem);
+            @include abs.flex(row, nowrap, center, center, 0);
+            @include abs.textos(1.9rem, bold, 0, var(--cor-clara));
+            @include abs.hw(4rem, 17rem);
             background-color: var(--cor-botoes);
             border-radius: 1.7rem;
             border: none;
@@ -55,9 +55,9 @@
         }
 
         #botao-saiba-mais{
-            @include mix.textos(1.9rem, bold, 0, var(--cor-primaria));
-            @include mix.hw(4rem, 16rem);
-            @include mix.flex(row, nowrap, center, center, 0.3rem);
+            @include abs.textos(1.9rem, bold, 0, var(--cor-primaria));
+            @include abs.hw(4rem, 16rem);
+            @include abs.flex(row, nowrap, center, center, 0.3rem);
             background-color: var(--cor-botoes);
             border-radius: 1.7rem;
             border: none;
@@ -71,14 +71,14 @@
     }
 
     &__container-imagem{
-        @include mix.flex(row, nowrap, center, center, 0);
+        @include abs.flex(row, nowrap, center, center, 0);
         flex: 1 1 auto;
 
         div{
             width: 29vw;
 
             img{
-                @include mix.hw(auto, 100%);
+                @include abs.hw(auto, 100%);
             }
         }
     }

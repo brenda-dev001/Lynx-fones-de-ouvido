@@ -1,30 +1,30 @@
-@use "../abstracts/mixins" as mix;
+@use "../abstracts" as abs;
 
 .recursos{
-    @include mix.flex(column, nowrap, center, space-evenly, 0);
+    @include abs.flex(column, nowrap, center, space-evenly, 0);
     background: linear-gradient(to bottom, var(--cor-fundo) 0%, var(--azul-escuro), var(--azul-escuro));
     padding: 2rem;
     min-height: 100vh;
     
     & h2{
-        @include mix.textos(2rem, normal, 2rem, var(--cor-primaria));
+        @include abs.textos(2rem, normal, 2rem, var(--cor-primaria));
         text-transform: uppercase;
     }
 
     &__container{
-        @include mix.flex(row, wrap, center, normal, 5rem);
+        @include abs.flex(row, wrap, center, normal, 5rem);
     }
 
     &__card{
-        @include mix.flex(column, nowrap, center, space-evenly, 0);
-        @include mix.hw(39rem, 23rem);
+        @include abs.flex(column, nowrap, center, space-evenly, 0);
+        @include abs.hw(39rem, 23rem);
         padding: 1rem;
         background-color: #032026a1;
         border-radius: 1.7rem;
         box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.25);
 
         h2{
-            @include mix.textos(1.8rem, normal, 2rem, var(--cor-primaria));
+            @include abs.textos(1.8rem, normal, 2rem, var(--cor-primaria));
             text-transform: lowercase;
             text-align: center;
         }

@@ -1,38 +1,38 @@
-@use "../abstracts/mixins" as mix;
+@use "../abstracts" as abs;
 
 .cabecalho{
-    @include mix.flex(row, wrap, center, space-between, 0);
-    @include mix.hw(auto, 100vw);
+    @include abs.flex(row, wrap, center, space-between, 0);
+    @include abs.hw(auto, 100vw);
     padding: 0 1.5rem;
     background-color: var(--cor-fundo);
     position: fixed;
 
     &__container{
-        @include mix.flex(row, wrap, center, none, 1rem);
-        @include mix.hw(auto, auto);
+        @include abs.flex(row, wrap, center, none, 1rem);
+        @include abs.hw(auto, auto);
     }
     
     &__link{
         display: inline-block;
-        @include mix.hw(auto, 6rem);
+        @include abs.hw(auto, 6rem);
         img{
-            @include mix.hw(auto, 100%);
+            @include abs.hw(auto, 100%);
         }
     }
 
     &__nav{
-        @include mix.flex(row, wrap, center, center, 7rem);
+        @include abs.flex(row, wrap, center, center, 7rem);
         margin-top: 1rem;
         
     }
 
     &__botton{
         background-color: transparent;
-        @include mix.hw(auto, 3.5rem);
+        @include abs.hw(auto, 3.5rem);
         border: none;
 
         & img{
-            @include mix.hw(auto, 94%);
+            @include abs.hw(auto, 94%);
         }
 
         &:hover{
@@ -41,7 +41,7 @@
     }
 
     &__container-compras{
-        @include mix.flex(row, nowrap, center, center, 3rem);
+        @include abs.flex(row, nowrap, center, center, 3rem);
     }
 
 }

@@ -1,4 +1,4 @@
-@use "../abstracts/mixins" as mix;
+@use "../abstracts" as abs;
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
@@ -10,19 +10,19 @@
 }
 
 body{
-    @include mix.flex(column, nowrap, normal, normal, 1rem);
+    @include abs.flex(column, nowrap, normal, normal, 1rem);
     font-family: "Nunito", sans-serif;
     background-color: var(--cor-fundo);
     color: var(--cor-clara);
     height: auto;
 
     main{
-        @include mix.flex(column, nowrap, normal, normal, 0);
+        @include abs.flex(column, nowrap, normal, normal, 0);
     }
 }
 
 h1{
-    @include mix.textos(3rem, bold, 0, var(--cor-primaria));
+    @include abs.textos(3rem, bold, 0, var(--cor-primaria));
     margin-top: 1rem;
     text-transform: uppercase;
     
@@ -38,19 +38,19 @@ h2{
 }
 
 p{
-    @include mix.textos(clamp(1.8rem, 1.5vw + 1.3rem, 2rem), normal, 1.1, var(--cor-clara));
+    @include abs.textos(clamp(1.8rem, 1.5vw + 1.3rem, 2rem), normal, 1.1, var(--cor-clara));
     text-align: justify;
 }
 
 a{
-    @include mix.textos(2rem, normal, 0, var(--cor-secundaria));
+    @include abs.textos(2rem, normal, 0, var(--cor-secundaria));
     text-decoration: none;
     text-transform: capitalize;
 
 }
 
 span{
-    @include mix.textos(clamp(1.6rem, calc(1.486rem + 0.357vw), 2rem), bold, 0, var(--cor-clara));
+    @include abs.textos(clamp(1.6rem, calc(1.486rem + 0.357vw), 2rem), bold, 0, var(--cor-clara));
     text-transform: uppercase;
     color: var(--cor-primaria);
 }

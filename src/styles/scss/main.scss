@@ -1,17 +1,4 @@
-//ABSTRACTS
-@use "./abstracts/variables";
 
-//BASE
-@use "./base/global";
-@use "./base/reset";
-@use "./abstracts/mixins";
-
-//ANIMATIONS
-
-//COMPONENTS
-@use "./components/botao";
-
-//LAYOUTS
-@use "./layouts/header";
-@use "./layouts/hero";
-@use "./layouts/recursos";
+@use "abstracts";
+@use "base";
+@use "layouts";
