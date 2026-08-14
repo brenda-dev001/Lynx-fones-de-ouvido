@@ -17,7 +17,7 @@
 
     &__card{
         @include mix.flex(column, nowrap, center, space-evenly, 0);
-        @include mix.hw(39rem, 22rem);
+        @include mix.hw(39rem, 23rem);
         padding: 1rem;
         background-color: #032026a1;
         border-radius: 1.7rem;
