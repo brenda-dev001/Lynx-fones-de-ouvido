@@ -1,4 +1,4 @@
-@use "../base/mixes" as mix;
+@use "../abstracts/mixins" as mix;
 
 .recursos{
     @include mix.flex(column, nowrap, center, space-evenly, 0);

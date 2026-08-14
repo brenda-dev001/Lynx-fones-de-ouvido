@@ -1,5 +1,4 @@
-@use "../base/mixes" as mix;
-@use "../abstracts/variaveis" as var;
+@use "../abstracts/mixins" as mix;
 
 .hero{
     @include mix.flex(row, wrap, center, space-around, 2rem);
