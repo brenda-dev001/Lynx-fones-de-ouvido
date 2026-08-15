@@ -38,7 +38,7 @@ h2{
 }
 
 p{
-    @include abs.textos(clamp(1.8rem, 1.5vw + 1.3rem, 2rem), normal, 1.1, var(--cor-clara));
+    @include abs.textos(clamp(1.6rem, 1.5221rem + 0.2076vw, 1.9rem), normal, 1.1, var(--cor-clara));
     text-align: justify;
 }
 
