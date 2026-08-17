@@ -285,7 +285,7 @@ html {
   justify-content: space-evenly;
   gap: 0;
   flex-wrap: nowrap;
-  background: linear-gradient(to bottom, var(--cor-fundo) 0%, var(--azul-escuro), var(--azul-escuro));
+  background: linear-gradient(to bottom, var(--cor-fundo), var(--azul-escuro));
   padding: 2rem;
   min-height: 100vh;
 }
@@ -336,6 +336,86 @@ html {
   border: 0.2rem solid var(--cor-secundaria);
   border-radius: 1.7rem;
   background-color: rgba(44, 179, 206, 0.568627451);
+}
+
+.cores {
+  background: linear-gradient(to bottom, var(--azul-escuro), var(--azul-petroleo));
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+.cores__descricao {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: normal;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  flex: 0 0 40%;
+  padding: 2rem;
+}
+.cores__descricao h2 {
+  font-size: 5rem;
+  font-weight: normal;
+  line-height: 5rem;
+  color: var(--cor-secundaria);
+  text-transform: uppercase;
+  text-align: end;
+}
+.cores__descricao h2 span {
+  font-size: 5rem;
+  font-weight: bolder;
+  line-height: 0;
+  color: var(--cor-primaria);
+  text-transform: uppercase;
+}
+.cores__container-btns {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  margin-top: 2rem;
+}
+.cores__container-btns button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  border: none;
+}
+.cores__container-btns #btn-azul {
+  background-color: #8DB9E6;
+}
+.cores__container-btns #btn-lilas {
+  background-color: #A68DCB;
+}
+.cores__container-btns #btn-preto {
+  background-color: #000001;
+}
+.cores__container-btns #btn-branco {
+  background-color: #D6D6D8;
+}
+.cores__container-btns #btn-esq, .cores__container-btns #btn-dir {
+  background-color: transparent;
+  width: auto;
+  height: auto;
+}
+.cores__container-btns #btn-esq i, .cores__container-btns #btn-dir i {
+  font-size: 2.5rem;
+  color: var(--cor-primaria);
+}
+.cores__imagens {
+  flex: 0 0 40%;
+  padding: 2rem;
+}
+.cores__imagens img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

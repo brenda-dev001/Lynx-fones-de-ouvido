@@ -1,0 +1,78 @@
+@use "../abstracts" as abs;
+
+.cores{
+    background: linear-gradient(to bottom, var(--azul-escuro), var(--azul-petroleo));
+    @include abs.flex(row, wrap, center, space-around, 2rem);
+    min-height: 100vh;
+
+    &__descricao{
+        @include abs.flex(column, nowrap, flex-end, normal, 2rem);
+        flex: 0 0 40%;
+        padding: 2rem;
+
+        h2{
+            @include abs.textos(5rem, normal, 5rem, var(--cor-secundaria));
+            text-transform: uppercase;
+            text-align: end;
+            
+            span{
+                @include abs.textos(5rem, bolder, 0, var(--cor-primaria));
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__container-btns{
+        @include abs.flex(row, nowrap, center, center, 2rem);
+        margin-top: 2rem;
+
+        & button{
+            @include abs.hw(5rem, 5rem);
+            border-radius: 100%;
+            border: none;
+        }
+
+        & #btn-azul{
+            background-color: #8DB9E6;
+        }
+        
+        & #btn-lilas{
+            background-color: #A68DCB;
+        }
+
+        & #btn-preto{
+            background-color: #000001;
+        }
+
+        & #btn-branco{
+            background-color: #D6D6D8;
+        }
+
+        & #btn-esq{
+            background-color: transparent;
+            @include abs.hw(auto, auto);
+            
+            & i{
+                font-size: 2.5rem;
+                color: var(--cor-primaria);
+            }
+        }
+
+        & #btn-dir{
+            @extend #btn-esq;
+        }
+
+    }
+
+    &__imagens{
+        flex: 0 0 40%;
+        padding: 2rem;
+
+        & img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    
+}
