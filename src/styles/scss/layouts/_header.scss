@@ -28,7 +28,7 @@
 
     &__botton{
         background-color: transparent;
-        @include abs.hw(auto, 3.5rem);
+        @include abs.hw(auto, 3rem);
         border: none;
 
         & img{
@@ -41,7 +41,7 @@
     }
 
     &__container-compras{
-        @include abs.flex(row, nowrap, center, center, 3rem);
+        padding: 2rem;
     }
 
 }

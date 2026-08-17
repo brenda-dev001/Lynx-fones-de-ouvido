@@ -135,7 +135,7 @@ html {
 }
 .cabecalho__botton {
   background-color: transparent;
-  width: 3.5rem;
+  width: 3rem;
   height: auto;
   border: none;
 }
@@ -147,12 +147,7 @@ html {
   cursor: pointer;
 }
 .cabecalho__container-compras {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  flex-wrap: nowrap;
+  padding: 2rem;
 }
 
 .hero {
