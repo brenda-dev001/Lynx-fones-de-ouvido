@@ -266,7 +266,7 @@ html {
   flex: 1 1 auto;
 }
 .hero__container-imagem div {
-  width: 29vw;
+  width: 34vw;
 }
 .hero__container-imagem div img {
   width: 100%;
@@ -280,7 +280,6 @@ html {
   justify-content: space-evenly;
   gap: 0;
   flex-wrap: nowrap;
-  background: linear-gradient(to bottom, var(--cor-fundo), var(--azul-escuro));
   padding: 2rem;
   min-height: 100vh;
 }
@@ -334,7 +333,6 @@ html {
 }
 
 .cores {
-  background: linear-gradient(to bottom, var(--azul-escuro), var(--azul-petroleo));
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -350,8 +348,7 @@ html {
   justify-content: normal;
   gap: 2rem;
   flex-wrap: nowrap;
-  flex: 0 0 40%;
-  padding: 2rem;
+  flex: 0 1 40%;
 }
 .cores__descricao h2 {
   font-size: 5rem;
@@ -406,11 +403,15 @@ html {
 }
 .cores__imagens {
   flex: 0 0 40%;
-  padding: 2rem;
+  padding: 3rem;
 }
 .cores__imagens img {
   width: 100%;
   height: auto;
+}
+
+.sobre {
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=main.css.map */

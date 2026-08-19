@@ -1,14 +1,12 @@
 @use "../abstracts" as abs;
 
 .cores{
-    background: linear-gradient(to bottom, var(--azul-escuro), var(--azul-petroleo));
     @include abs.flex(row, wrap, center, space-around, 2rem);
     min-height: 100vh;
 
     &__descricao{
         @include abs.flex(column, nowrap, flex-end, normal, 2rem);
-        flex: 0 0 40%;
-        padding: 2rem;
+        flex: 0 1 40%;
 
         h2{
             @include abs.textos(5rem, normal, 5rem, var(--cor-secundaria));
@@ -66,7 +64,7 @@
 
     &__imagens{
         flex: 0 0 40%;
-        padding: 2rem;
+        padding: 3rem;
 
         & img{
             width: 100%;
