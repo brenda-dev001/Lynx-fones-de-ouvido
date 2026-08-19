@@ -2,7 +2,6 @@
 
 .recursos{
     @include abs.flex(column, nowrap, center, space-evenly, 0);
-    background: linear-gradient(to bottom, var(--cor-fundo), var(--azul-escuro));
     padding: 2rem;
     min-height: 100vh;
     
