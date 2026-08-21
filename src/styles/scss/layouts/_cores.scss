@@ -2,7 +2,7 @@
 
 .cores{
     @include abs.flex(row, wrap, center, space-around, 2rem);
-    min-height: 100vh;
+    min-height: 70vh;
 
     &__descricao{
         @include abs.flex(column, nowrap, flex-end, normal, 2rem);
