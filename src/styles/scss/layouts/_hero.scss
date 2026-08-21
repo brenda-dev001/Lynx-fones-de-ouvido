@@ -1,4 +1,5 @@
 @use "../abstracts" as abs;
+@use "../components";
 
 .hero{
     @include abs.flex(row, wrap, center, space-around, 2rem);
@@ -39,30 +40,9 @@
     &__container-botoes{
         @include abs.flex(row, nowrap, center, center, 2rem);
 
-        #botao-comprar{
-            @include abs.flex(row, nowrap, center, center, 0);
-            @include abs.textos(1.9rem, bold, 0, var(--cor-clara));
-            @include abs.hw(4rem, 17rem);
-            background-color: var(--cor-botoes);
-            border-radius: 1.7rem;
-            border: none;
-            color: var(--cor-primaria);
-            box-shadow: 0 4px 12px rgba(73, 221, 252, 0.2);
-
-            &:hover{
-                cursor: pointer;
-            }
-        }
 
         #botao-saiba-mais{
-            @include abs.textos(1.9rem, bold, 0, var(--cor-primaria));
-            @include abs.hw(4rem, 16rem);
-            @include abs.flex(row, nowrap, center, center, 0.3rem);
-            background-color: var(--cor-botoes);
-            border-radius: 1.7rem;
-            border: none;
-            text-transform: none;
-            box-shadow: 0 4px 12px rgba(73, 221, 252, 0.2);
+            @extend button;
 
             i{
                 font-size: 2.5rem;
