@@ -1,0 +1,60 @@
+@use "../abstracts" as abs;
+
+.sobre{
+    @include abs.flex(row, wrap, center, space-around, 3rem);
+    min-height: 100vh;
+    padding: 0 2rem;
+    
+    &__container-detalhes{
+        @include abs.flex(column, nowrap, flex-start, normal, 4rem);
+        flex: 1 0 50%;
+    }
+    
+    &__container-imagens{
+        @include abs.flex(row, wrap, center, flex-start, 1.5rem);
+
+        div{
+            @include abs.hw(21rem, 22rem);
+            background-color: var(--cor-primaria-escura);
+            border-radius: 0.8rem;
+            border: 0.2rem solid var(--azul-petroleo);
+            box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.142);
+        }
+    }
+
+    &__container-venda{
+        @include abs.flex(column, nowrap, center, normal, 0);
+        flex: 0 1 40%;
+        
+        
+        button{
+            width: 100%;
+        }
+    }
+    
+    &__container-descricao{
+        @include abs.flex(column, nowrap, flex-start, normal, 3rem);
+        width: 80%;
+        h2{
+            @include abs.textos(2.5rem, normal, 3rem, var(--cor-primaria));
+            text-transform: uppercase;
+        }
+    }
+    &__venda{
+        @include abs.flex(column, nowrap, flex-start, normal, 1rem);
+        width: 100%;
+        margin-bottom: 1rem;
+        strong{
+            font-size: 5rem;
+        }
+        p{
+            @include abs.textos(1.7rem, normal, 0, var(--cor-clara));
+
+            span{
+                @include abs.textos(1.8rem, bold, 0, var(--cor-primaria));
+                text-transform: uppercase;
+            }
+        }
+    }
+
+}
