@@ -15,10 +15,15 @@
 
         div{
             @include abs.hw(21rem, 22rem);
-            background-color: var(--cor-primaria-escura);
+            background-color: transparent;
             border-radius: 0.8rem;
-            border: 0.2rem solid var(--azul-petroleo);
-            box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.142);
+            border: 0.1rem solid var(--azul-petroleo);
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+            }
         }
     }
 
