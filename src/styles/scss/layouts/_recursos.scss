@@ -3,7 +3,7 @@
 .recursos{
     @include abs.flex(column, nowrap, center, space-evenly, 0);
     padding: 2rem;
-    min-height: 100vh;
+    min-height: 90vh;
     
     & h2{
         @include abs.textos(2rem, normal, 2rem, var(--cor-primaria));

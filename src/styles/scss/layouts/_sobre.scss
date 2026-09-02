@@ -2,7 +2,7 @@
 
 .sobre{
     @include abs.flex(row, wrap, center, space-around, 3rem);
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 0 2rem;
     
     &__container-detalhes{

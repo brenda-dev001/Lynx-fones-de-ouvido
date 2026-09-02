@@ -260,7 +260,7 @@ html {
   gap: 0;
   flex-wrap: nowrap;
   padding: 2rem;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 .recursos h2 {
   font-size: 2rem;
@@ -396,7 +396,7 @@ html {
   justify-content: space-around;
   gap: 3rem;
   flex-wrap: wrap;
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 0 2rem;
 }
 .sobre__container-detalhes {
