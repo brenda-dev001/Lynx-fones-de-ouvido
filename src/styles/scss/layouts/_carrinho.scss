@@ -1,0 +1,162 @@
+@use "../abstracts" as abs;
+
+.carrinho{
+    @include abs.hw(100dvh, 40rem);
+    @include abs.flex(column, nowrap, flex-start, space-between, 0);
+    background-color: var(--azul-escuro);
+    position: fixed;
+    right: 0%;
+    border-top-left-radius: 3rem; 
+    border-bottom-left-radius: 3rem; 
+    padding: 2rem;
+
+    h2{
+        @include abs.textos(2rem, normal, 1rem, var(--cor-primaria));
+        text-transform: uppercase;
+    }
+
+    &__card-produto{
+        background-color: var(--cor-fundo);
+        border-radius: 1rem;
+        padding: 1rem;
+        @include abs.hw(20rem, 100%);
+        @include abs.flex(row, nowrap, flex-start, space-between, 0);
+
+        p{
+            font-size: 1.7rem;
+        }
+
+        span{
+            color: var(--cor-secundaria);
+            font-size: 1.4rem;
+        }
+    }
+
+    &__caixa{
+        @include abs.flex(column, nowrap, normal, normal, 1.3rem);
+        width: 100%;
+
+    }
+
+    &__caixa-produto{
+        @include abs.flex(column, nowrap, normal, normal, 1.3rem);
+        border-radius: 1rem;
+        width: 100%;
+        max-height: 40rem;
+        overflow-y: auto;
+    }
+    
+    &__caixa-resumo-compra{
+        @include abs.flex(column, nowrap, normal, normal, 1.3rem);
+        width: 100%;
+
+    }
+
+    &__container-detalhes{
+        @include abs.flex(column, nowrap, flex-start, space-around, 0);
+        height: 100%;
+
+        div:first-child{
+            width: 10rem;
+    
+            img{
+                @include abs.hw(auto, 100%);
+            }
+        }
+
+        :nth-child(2){
+            @include abs.flex(column, nowrap, normal, normal, 1rem);
+        }
+    }
+
+    &__quantidade-produto{
+        @include abs.flex(row, nowrap, center, normal, 0.5rem);
+        @include abs.hw(3rem, 16rem);
+        border: 0.1rem solid var(--cor-primaria);
+        border-radius: 1rem;
+
+        .carrinho__contador{
+            @include abs.flex(row, nowrap, center, center, 0);
+            width: 11rem;
+        }
+
+        button{
+            border-radius: inherit;
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+
+    &__preco-produto{
+        @include abs.flex(column, nowrap, flex-end, space-between, 0);
+        height: 100%;
+
+        .bi-x-circle{
+            font-size: 2rem;
+            color: var(--cor-primaria);
+        }
+
+        strong{
+            font-size: 2rem;
+            color: var(--cor-primaria);
+        }
+    }
+
+    &__cupom{
+        @include abs.flex(column, nowrap, center, normal, 1rem);
+        width: 100%;
+
+        input{
+            @include abs.textos(1.7rem, normal, 0, var(--cor-fundo));
+            @include abs.hw(3rem, 100%);
+            text-transform: uppercase;
+            border: none;
+            border-radius: 1rem;
+            padding: 1rem;
+            background-color: var(--cor-clara);
+
+            &:focus-visible{
+                border: 0.2rem solid var(--cor-secundaria);
+                outline: none;
+            }
+
+            &::placeholder{
+                color: #0a414cb8;
+                text-transform: lowercase;
+            }
+        }
+        button{
+            @include abs.hw(3.5rem, 100%);
+        }
+    }
+
+    &__resumo-compra{
+        @include abs.flex(column, nowrap, normal, normal, 1rem);
+        width: 100%;
+
+        & div{
+            @include abs.flex(row, nowrap, center, space-between, 0);
+
+            p{
+                color: var(--cor-clara);
+                font-size: 1.7rem;
+            }
+
+            strong{
+                @include abs.textos(1.7rem, normal, 0, var(--cor-clara));
+
+                span{
+                    @include abs.textos(1.7rem, normal, 0, var(--cor-clara));
+                }
+            }
+        }
+    }
+
+    &__container-botoes{
+        @include abs.flex(column, nowrap, normal, normal, 1rem);
+        width: 100%;
+        button{
+            @include abs.hw(3.5rem, inherit);
+        }
+    }
+}
