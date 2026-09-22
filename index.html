@@ -29,46 +29,116 @@
     </header>
     <main>
         <aside class="carrinho">
-            <h2>Seu carrinho</h2>
-            <article class="carrinho__card-produto">
-                <div class="carrinho__container-detalhes">
-                    <div>
-                        <img src="/src/assets/images/png_fone--preto.png" alt="imagem do fone de ouvido">
-                    </div>
-                    <div>
-                        <p>Fone gamer Lynx</p>
-                        <span>Preto</span>
-                        <div class="carrinho__quantidade-produto">
-                            <button><i class="bi bi-dash"></i></button>
-                            <div class="carrinho__contador"><p>1</p></div>
-                            <button><i class="bi bi-plus"></i></button>
+            <div class="carrinho__caixa">
+                <h2>Seu carrinho</h2>
+                <div class="carrinho__caixa-produto">
+                    <article class="carrinho__card-produto">
+                        <div class="carrinho__container-detalhes">
+                            <div>
+                                <img src="/src/assets/images/png_fone--preto.png" alt="imagem do fone de ouvido">
+                            </div>
+                            <div>
+                                <p>Fone gamer Lynx</p>
+                                <span>Preto</span>
+                                <div class="carrinho__quantidade-produto">
+                                    <button><i class="bi bi-dash"></i></button>
+                                    <div class="carrinho__contador"><p>1</p></div>
+                                    <button><i class="bi bi-plus"></i></button>
+                                </div>
+                            </div>
                         </div>
+                        <div class="carrinho__preco-produto">
+                            <i class="bi bi-x-circle"></i>
+                            <strong>R$ 300,00</strong>
+                        </div>
+                    </article>
+                    <article class="carrinho__card-produto">
+                        <div class="carrinho__container-detalhes">
+                            <div>
+                                <img src="/src/assets/images/png_fone--preto.png" alt="imagem do fone de ouvido">
+                            </div>
+                            <div>
+                                <p>Fone gamer Lynx</p>
+                                <span>Preto</span>
+                                <div class="carrinho__quantidade-produto">
+                                    <button><i class="bi bi-dash"></i></button>
+                                    <div class="carrinho__contador"><p>1</p></div>
+                                    <button><i class="bi bi-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrinho__preco-produto">
+                            <i class="bi bi-x-circle"></i>
+                            <strong>R$ 300,00</strong>
+                        </div>
+                    </article>
+                    <article class="carrinho__card-produto">
+                        <div class="carrinho__container-detalhes">
+                            <div>
+                                <img src="/src/assets/images/png_fone--preto.png" alt="imagem do fone de ouvido">
+                            </div>
+                            <div>
+                                <p>Fone gamer Lynx</p>
+                                <span>Preto</span>
+                                <div class="carrinho__quantidade-produto">
+                                    <button><i class="bi bi-dash"></i></button>
+                                    <div class="carrinho__contador"><p>1</p></div>
+                                    <button><i class="bi bi-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrinho__preco-produto">
+                            <i class="bi bi-x-circle"></i>
+                            <strong>R$ 300,00</strong>
+                        </div>
+                    </article>
+                    <article class="carrinho__card-produto">
+                        <div class="carrinho__container-detalhes">
+                            <div>
+                                <img src="/src/assets/images/png_fone--preto.png" alt="imagem do fone de ouvido">
+                            </div>
+                            <div>
+                                <p>Fone gamer Lynx</p>
+                                <span>Preto</span>
+                                <div class="carrinho__quantidade-produto">
+                                    <button><i class="bi bi-dash"></i></button>
+                                    <div class="carrinho__contador"><p>1</p></div>
+                                    <button><i class="bi bi-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carrinho__preco-produto">
+                            <i class="bi bi-x-circle"></i>
+                            <strong>R$ 300,00</strong>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="carrinho__caixa-resumo-compra">
+                <div class="carrinho__cupom">
+                    <label for="cupom"></label>
+                    <input type="text" id="cupom" name="cupom" placeholder="Código do cupom">
+                    <button type="submit">Aplicar desconto</button>
+                </div>
+                <div class="carrinho__resumo-compra">
+                    <div>
+                        <p>Subtotal</p>
+                        <strong>R$ <span>00,00</span></strong>
+                    </div>
+                    <div>
+                        <p>Desconto aplicado</p>
+                        <strong>R$ <span>00,00</span></strong>
+                    </div>
+                    <div>
+                        <p>Total</p>
+                        <strong>R$ <span>00,00</span></strong>
                     </div>
                 </div>
-                <div class="carrinho__preco-produto">
-                    <i class="bi bi-x-circle"></i>
-                    <strong>R$ 300,00</strong>
-                </div>
-            </article>
-            <div class="carrinho__cupom">
-                <label for="cupom">Adicionar cupom</label>
-                <input type="text" id="cupom" name="cupom" placeholder="Código do cupom">
-                <button type="submit">Aplicar desconto</button>
-            </div>
-            <div class="carrinho__resumo-compra">
-                <div class="carrinho__container-compra">
-                    <p>Subtotal</p>
-                    <p>Desconto aplicado</p>
-                    <p>Total</p>
-                </div>
-                <div class="carrinho__total">
-                    <strong>R$ 600,00</strong>
-                    <strong>R$ 00,00</strong>
-                    <strong>R$ 600,00</strong>
+                <div class="carrinho__container-botoes">
+                    <button>Finalizar compra</button>
+                    <button>Continuar comprando</button>
                 </div>
             </div>
-            <button>Finalizar compra</button>
-            <button>Continuar comprando</button>
         </aside>
         <section class="hero">
             <div class="hero__container-lancamento">
