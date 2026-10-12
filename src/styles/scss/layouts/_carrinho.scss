@@ -6,9 +6,10 @@
     background-color: var(--azul-escuro);
     position: fixed;
     right: 0%;
-    border-top-left-radius: 3rem; 
-    border-bottom-left-radius: 3rem; 
+    border-top-left-radius: 2.3rem; 
+    border-bottom-left-radius: 2.3rem; 
     padding: 2rem;
+    overflow-y: auto;
 
     h2{
         @include abs.textos(2rem, normal, 1rem, var(--cor-primaria));
