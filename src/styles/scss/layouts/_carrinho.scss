@@ -11,6 +11,29 @@
     padding: 2rem;
     overflow-y: auto;
 
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: var(--cor-primaria) transparent;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0.6rem;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--cor-primaria);
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--cor-primaria);
+        opacity: 0.8;
+    }
+    
     h2{
         @include abs.textos(2rem, normal, 1rem, var(--cor-primaria));
         text-transform: uppercase;

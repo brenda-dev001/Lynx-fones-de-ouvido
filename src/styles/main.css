@@ -500,6 +500,24 @@ html {
   padding: 2rem;
   overflow-y: auto;
 }
+.carrinho * {
+  scrollbar-width: thin;
+  scrollbar-color: var(--cor-primaria) transparent;
+}
+.carrinho ::-webkit-scrollbar {
+  width: 0.6rem;
+}
+.carrinho ::-webkit-scrollbar-track {
+  background: transparent;
+}
+.carrinho ::-webkit-scrollbar-thumb {
+  background: var(--cor-primaria);
+  border-radius: 1rem;
+}
+.carrinho ::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-primaria);
+  opacity: 0.8;
+}
 .carrinho h2 {
   font-size: 2rem;
   font-weight: normal;
