@@ -27,12 +27,13 @@
     }
 
     &__botton{
-        background-color: transparent;
         @include abs.hw(auto, 3rem);
+        background-color: transparent;
         border: none;
+        box-shadow: none;
 
         & img{
-            @include abs.hw(auto, 94%);
+            @include abs.hw(auto, 92%);
         }
 
         &:hover{
@@ -41,7 +42,7 @@
     }
 
     &__container-compras{
-        padding: 2rem;
+        padding: 1rem;
     }
 
 }

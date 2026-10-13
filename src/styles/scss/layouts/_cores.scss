@@ -28,27 +28,32 @@
             @include abs.hw(5rem, 5rem);
             border-radius: 100%;
             border: none;
+            box-shadow: none;
         }
 
         & #btn-azul{
             background-color: #8DB9E6;
+            box-shadow: 0rem 0rem 1rem #8dbae684;
         }
         
         & #btn-lilas{
             background-color: #A68DCB;
+            box-shadow: 0rem 0rem 1rem #a68dcb85;
         }
 
         & #btn-preto{
             background-color: #000001;
+            box-shadow: 0rem 0rem 1rem #00000148;
         }
 
         & #btn-branco{
             background-color: #D6D6D8;
+            box-shadow: 0rem 0rem 1rem #d6d6d883;
         }
 
         & #btn-esq{
-            background-color: transparent;
             @include abs.hw(auto, auto);
+            background-color: transparent;
             
             & i{
                 font-size: 2.5rem;

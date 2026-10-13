@@ -180,20 +180,21 @@ html {
   margin-top: 1rem;
 }
 .cabecalho__botton {
-  background-color: transparent;
   width: 3rem;
   height: auto;
+  background-color: transparent;
   border: none;
+  box-shadow: none;
 }
 .cabecalho__botton img {
-  width: 94%;
+  width: 92%;
   height: auto;
 }
 .cabecalho__botton:hover {
   cursor: pointer;
 }
 .cabecalho__container-compras {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .hero {
@@ -384,23 +385,28 @@ html {
   height: 5rem;
   border-radius: 100%;
   border: none;
+  box-shadow: none;
 }
 .cores__container-btns #btn-azul {
   background-color: #8DB9E6;
+  box-shadow: 0rem 0rem 1rem rgba(141, 186, 230, 0.5176470588);
 }
 .cores__container-btns #btn-lilas {
   background-color: #A68DCB;
+  box-shadow: 0rem 0rem 1rem rgba(166, 141, 203, 0.5215686275);
 }
 .cores__container-btns #btn-preto {
   background-color: #000001;
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 1, 0.2823529412);
 }
 .cores__container-btns #btn-branco {
   background-color: #D6D6D8;
+  box-shadow: 0rem 0rem 1rem rgba(214, 214, 216, 0.5137254902);
 }
 .cores__container-btns #btn-esq, .cores__container-btns #btn-dir {
-  background-color: transparent;
   width: auto;
   height: auto;
+  background-color: transparent;
 }
 .cores__container-btns #btn-esq i, .cores__container-btns #btn-dir i {
   font-size: 2.5rem;
@@ -525,6 +531,7 @@ html {
   border-bottom-left-radius: 2.3rem;
   padding: 2rem;
   overflow-y: auto;
+  display: none;
 }
 .carrinho * {
   scrollbar-width: thin;
