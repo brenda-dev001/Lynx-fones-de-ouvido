@@ -514,6 +514,34 @@ html {
   color: var(--cor-primaria);
   text-transform: uppercase;
 }
+.sobre__seleciona-cores {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.sobre__seleciona-cores button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  box-shadow: none;
+  cursor: pointer;
+}
+.sobre__seleciona-cores #seleciona-azul {
+  background-color: #8DB9E6;
+}
+.sobre__seleciona-cores #seleciona-rosa {
+  background-color: #A68DCB;
+}
+.sobre__seleciona-cores #seleciona-preto {
+  background-color: #000001;
+}
+.sobre__seleciona-cores #seleciona-branco {
+  background-color: #D6D6D8;
+}
 
 .carrinho {
   width: 40rem;
