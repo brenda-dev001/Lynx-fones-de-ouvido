@@ -1,24 +1,24 @@
 @use "../abstracts" as abs;
 
 .sobre{
-    @include abs.flex(row, wrap, center, space-around, 3rem);
+    @include abs.flex(row, wrap, center, space-around, 2rem);
     min-height: 90vh;
     padding: 0 2rem;
     
-    &__container-detalhes{
-        @include abs.flex(column, nowrap, flex-start, normal, 4rem);
-        flex: 1 0 50%;
+    &__container-imagens{
+        @include abs.flex(column, nowrap, center, flex-start, 1.5rem);
+        flex: 0 1 50%;
     }
     
-    &__container-imagens{
-        @include abs.flex(row, wrap, center, flex-start, 1.5rem);
-
-        div{
-            @include abs.hw(21rem, 22rem);
-            background-color: transparent;
-            border-radius: 0.8rem;
+    &__divide-imgs{
+        @include abs.flex(row, nowrap, center, center, 2rem);
+        width: 100%;
+        & div{
             border: 0.1rem solid var(--azul-petroleo);
-
+            border-radius: 0.8rem;
+            background-color: transparent;
+            width: auto;
+            height: auto;
             img{
                 @include abs.hw(100%, 100%);
                 border-radius: inherit;
@@ -28,8 +28,7 @@
 
     &__container-venda{
         @include abs.flex(column, nowrap, center, normal, 0);
-        flex: 0 1 40%;
-        
+        flex: 0 1 45%;
         
         button{
             width: 100%;
