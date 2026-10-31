@@ -1,7 +1,7 @@
 @use "../abstracts" as abs;
 
 .recursos{
-    @include abs.flex(column, nowrap, center, space-evenly, 0);
+    @include abs.flex(column, nowrap, center, space-evenly, 4rem);
     padding: 2rem;
     min-height: 90vh;
     
@@ -11,7 +11,8 @@
     }
 
     &__container{
-        @include abs.flex(row, wrap, center, normal, 5rem);
+        @include abs.flex(row, nowrap, center, center, 5rem);
+        width: 100%;
     }
 
     &__card{
